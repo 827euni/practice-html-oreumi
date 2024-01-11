@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>로그인 페이지</title>
+</head>
+<body>
+  <h3>로그인</h3>
+
+  <p>아이디와 비밀번호를 입력하고 로그인하세요</p>
+
+  <form>
+
+    <label for ="id"> <!--label 안에 넣으면 굳이 for과 id로 엮지 않아도 됨-->
+      아이디<input type="text" id="id" required>
+    </label>
+<br>
+    <label for = "pw">
+      비밀번호<input type="password" id="pw" required>
+
+    </label>
+<br>
+    <label>
+      <input type ="checkbox"> 아이디 저장
+    </label>
+    <br>
+    <button type="submit">로그인</button>
+  </form>
+
+</body>
+</html>
