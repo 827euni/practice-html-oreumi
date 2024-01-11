@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN_UI</title>
+
+    <style>
+        .back{width: 400px; height: 200px; background-color : #ffffff; position: absolute;}
+        .ui_background{
+            margin: 0px; width: 350px; height: 140px; border-radius: 5px; border : 1px solid #DBDBDB; }
+        .welcome{
+            font-size : 12px; line-height : 15.02px; position: absolute; top : 19px; left :16px;
+        }
+        .login_button{
+            display: inline;
+            width : 318px; height: 40px ; border-radius: 4px; background-color: #711BFF; position: absolute; left : 16px; top : 50px;
+        }
+        .button{display: flex; align-items: center; justify-content: center;}
+        .login{display:inline; font-size : 12px; line-height: 15.02px; color: #ffffff}
+        .another{position: absolute; left : 16px; top : 106px; width : 318px;}
+        .another0{display:flex ; justify-content: space-between; margin : 0px;}
+        .another_text1{font-size : 12px; line-height: 15.02px; color: #767676;}
+        .another_text2{font-size : 12px; line-height: 15.02px; color: #767676;}
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class = "ui_background">
+            <p class = "welcome">
+                더 편리해진 위니브에 오신 것을 환영합니다.
+            </p>
+
+            <div class ="login_button">
+                <p class = "button">
+                    <img src="weniv-logo.png" width = "64px" height="18px">
+                    <span class="login">로그인</span> <!--조정-->
+                </p>
+            </div>
+
+            <div class = "another">
+                <p class="another0">
+                <label class="another1">
+                    <img src="icon-lock.png" width = "16px" height="16px">
+                    <span class = "another_text1">아이디 | 비밀번호찾기</span>
+                </label>
+                <label class = "another2">
+                    <img src="icon-user.png" width = "16px" height="16px">
+                    <span class = "another_text2">회원가입</span>
+                </label>
+                </p>
+            </div>
+    </div>
+    </div>
+</body>
+
+</html>
