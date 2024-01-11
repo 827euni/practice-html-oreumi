@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>LOGIN_UI</title>
+
+    <style>
+        .back{width: 400px; height: 200px; background-color : #ffffff; position: absolute;
+            display: flex; transform: translate(50%,50%);}
+        .ui_background{
+            width: 350px; height: 140px; border-radius: 5px; border : 1px solid #DBDBDB; }
+        .welcome{
+            font-size : 12px; line-height : 15.02px; position: absolute; top : 19px; left :16px;
+        }
+        .login_button{
+            display: inline;
+            width : 318px; height: 40px ; border-radius: 4px; background-color: #711BFF; position: absolute; left : 16px; top : 50px; border : 0;"
+        }
+        .button{display: flex; align-items: center; justify-content: center; color : white;vertical-align: 10px;}
+        .another{position: absolute; left : 16px; top : 106px; width : 318px;}
+        .another0{display:flex ; justify-content: space-between; margin : 0;}
+        .another_text{font-size : 12px; line-height: 15.02px; color: #767676;}
+    </style>
+</head>
+
+<body>
+    <div class="back">
+        <div class = "ui_background">
+            <p class = "welcome">
+                더 편리해진 위니브에 오신 것을 환영합니다.
+            </p>
+
+            <button class ="login_button">
+                <p class = "button">
+                    <img src="weniv-logo.png" width = "64px" height="18px">
+                    로그인
+                </p>
+            </button>
+
+            <div class = "another">
+                <p class="another0">
+                    <label class="ID_PW">
+                        <img src="icon-lock.png" width = "16px" height="16px" class = "icon">
+                        <span class = "another_text"><a href = "">아이디 </a></span>
+                        <span class = "another_text">|</span>
+                        <span class = "another_text"><a href = ""> 비밀번호찾기</a></span>
+                    </label>
+                    <label class = "sign_up">
+                        <img src="icon-user.png" width = "16px" height="16px" class = "icon">
+                        <span class = "another_text"><a href = "">회원가입</a></span>
+                    </label>
+                </p>
+            </div>
+    </div>
+    </div>
+</body>
+
+</html>

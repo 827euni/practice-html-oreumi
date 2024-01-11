@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOCUMENTS</title>
+
+    <style>
+        .blue, .green, .yellow {width : 50px; height : 50px; text-align : center; color:white; display: grid; place-items: center;}
+
+        .blue {background-color: #7289FF;}
+        .green {background-color: #6BA399;}
+        .yellow {background-color: #F8D849;}
+
+        .wrap {background-color: #E6E6E6; width : 500px; height : 500px;}
+        .wrap, article>div {
+            display:flex ; justify-content: space-between; gap : 50px;
+        }
+        .left_side, .center {flex-direction: column;}
+        .right_side {flex-direction: column-reverse;}
+
+    </style>
+
+</head>
+<body>
+<article class="wrap">
+    <div class="left_side">
+        <div class="blue">A</div>
+        <div class="green">B</div>
+        <div class="yellow">C</div>
+    </div>
+    <div class="center">
+        <div class="blue">D</div>
+        <div class="yellow">E</div>
+    </div>
+    <div class="right_side">
+        <div class="blue">F</div>
+        <div class="green">G</div>
+        <div class="yellow">H</div>
+    </div>
+</article>
+</body>
+</html>
