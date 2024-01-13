@@ -1,0 +1,226 @@
+<!DOCTYPE html> <!--폰트는 눈누를 통해서 사용가능함-->
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>1만 시간의 법칙</title>
+
+    <style>
+
+        @font-face {
+            font-family: 'OTEnjoystoriesBA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @font-face {
+            font-family: 'GmarketSansMedium';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+        .notosanskr * {
+            font-family: 'Noto Sans KR', sans-serif;
+            color: white;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 17.38px;
+            align-content: center;
+        }
+
+        .background {
+            display : flex; width : 1920px; height: 1917px;
+        }
+
+        .frame {
+            display: inline;
+            margin: auto;
+            padding-top: 273px;
+            padding-left: 678px;
+            position: absolute;
+        }
+
+        .clock {
+            display: inline;
+            position:absolute;
+            margin: auto;
+            padding-top: 199px;
+            padding-left: 830px;
+            opacity: 30%;
+        }
+
+
+        .title_10000{
+            display: flex;
+            color : #F5DF4D;
+            font-family: "OTEnjoystoriesBA";
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 40px;
+            letter-spacing: 0em;
+            text-align: center;
+            padding-top: 510px;
+            padding-left: 717px;
+            width: 1920px;
+            /*좌우정렬해야함*/
+        }
+
+        .marks{
+            display: inline;
+            padding-left:714px;
+            padding-top:118px;
+            position:absolute;
+        }
+
+
+        .article_text{
+            position:absolute;
+            display: inline;
+            margin: auto;
+            width: 375px;
+            height:85px;
+            padding-top: 131px;
+            padding-left: 774px;
+            color : white;
+            text-align: center;
+            font-family: "GmarketSansMedium";
+            line-height: normal;
+
+        }
+        .name_10000{
+            font-size: 24px;
+            font-weight: 700;
+        }
+
+        .name_p{
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .main_text{
+            display: inline;
+            position: absolute;
+            font-size: 24px;
+            color : white;
+            line-height: 24px;
+            font-family: "GmarketSansMedium" ;
+            font-weight: 400;
+            padding-top: 874px;
+            width:1920px;
+            text-align: center;
+        }
+
+        .main_subject, .main_time{
+            margin:0px;
+            border-radius: 7px;
+            color: #BABCBE ;
+            width : 225px;
+            height: 57px;
+            font-family: "GmarketSansMedium";
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            align-content: center;
+            text-align: center;
+        }
+        .main_subject{
+            margin-top: 78px;
+        }
+
+        .main_time{
+            margin-top : 27px;
+        }
+
+
+        .button_time{
+            display: inline;
+            position: absolute;
+            margin-top: 115px;
+            margin-left:678px;
+        }
+        .button_how_time{
+
+            margin:0px;
+            border-radius: 56px;
+            background-color: #FCEE21;
+            color: #5b2383 ;
+            width : 565px;
+            height: 66px;
+            font-family: "GmarketSansMedium";
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            align-content: center;
+            margin-top: 1071px;
+
+        }
+        .finger{
+            position: absolute;
+            margin-top: 1091px;
+        }
+
+        .footer{
+            width:1920px;
+            position: absolute;
+            display: inline;
+            font-family: "Noto Sans KR";
+            color: white;
+            display: grid;
+
+        }
+    </style>
+
+    <script type="text/javascript">
+
+    </script>
+</head>
+
+<body style="background-color: #5b2383;">
+
+<div class="background">
+
+    <header class = "header"> <!--끝!-->
+        <img src="media/Frame.png" width = "546px" height = "112px" alt = "1만 시간의 법칙" class = "frame">
+        <img src="media/clock.png" width = "261px" height = "265px" alt = "시계 모양 배경" class = "clock">
+    </header>
+
+    <article class="article_10000">
+        <h2 class = "title_10000">
+            "연습은 어제의 당신보다 당신을 더 낫게 만든다."
+        </h2>
+        <p class="mean_10000">
+            <img src="media/marks.png" width="493px" height="96px" class="marks">
+            <label class="article_text">
+                <span class = "name_10000">1만 시간의 법칙</span>
+                <span class = "name_p">은<br> 어떤 분야의 전문가가 되기 위해서는<br>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</span>
+            </label>
+        </p>
+    </article>
+
+    <main class = "main_text">
+        나는
+        <input type="text" value="예)프로그래밍" class="main_subject" > 전문가가 될 것이다.
+        <br>
+        그래서 앞으로 매일 하루에 <input type="text" value="예)5시간" step="1" class="main_time"> 시간씩 훈련할 것이다.
+    </main>
+
+    <nav class="button_time">
+        <button class="button_how_time">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+        <img src="media/finger.png" width="64px" height="72px" class="finger">
+    </nav>
+
+    <section class="hidden">
+
+    </section>
+
+    <footer class="footer">
+        <img src="media/weniv.png" width="125px" height="25px" class="weniv">
+        <span class="notosanskr">※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.
+        수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</span>
+    </footer>
+</div>
+</body>
+</html>
