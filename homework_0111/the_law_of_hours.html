@@ -1,4 +1,4 @@
-<!DOCTYPE html> <!--폰트는 눈누를 통해서 사용가능함-->
+<!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
@@ -22,6 +22,12 @@
 
         @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
+        @font-face {
+            font-family: 'OTEnjoystoriesBA';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+        }
 
         .background {
             display : flex; width : 1920px; height: 1917px;
@@ -93,7 +99,7 @@
         }
 
         .main_text{
-            display: inline;
+            display: block;
             position: absolute;
             font-size: 24px;
             color : white;
@@ -103,6 +109,7 @@
             padding-top: 874px;
             width:1920px;
             text-align: center;
+            padding-bottom: 115px;
         }
 
         .main_subject, .main_time{
@@ -117,6 +124,7 @@
             line-height: 24px;
             align-content: center;
             text-align: center;
+            border : 0;
         }
         .main_subject{
             margin-top: 78px;
@@ -128,31 +136,125 @@
 
 
         .button_time{
-            display: inline;
+            width: 1920px;
+            height: 130px;
+            display: flex;
             position: absolute;
-            margin-top: 115px;
-            margin-left:678px;
-        }
-        .button_how_time{
+            margin-left: 678px;
+            top:1212px;
+            padding-bottom:147px ;
 
-            margin:0px;
+        }
+
+        .button_how_time,.gogo, .share {
+            margin: 0px;
             border-radius: 56px;
-            background-color: #FCEE21;
-            color: #5b2383 ;
-            width : 565px;
-            height: 66px;
+            color: #5b2383;
             font-family: "GmarketSansMedium";
+            border : 0;
             font-weight: 700;
             font-size: 24px;
             line-height: 24px;
-            align-content: center;
-            margin-top: 1071px;
-            border: 0;
+            text-align: center;
+        }
 
+        .button_how_time{
+            background-color: #FCEE21;
+            width : 565px;
+            height: 66px;
+            align-content: center;
+            display: inline;
+            position: absolute;
         }
         .finger{
             position: absolute;
-            margin-top: 1091px;
+            left:572px;
+        }
+
+        .hidden{ /*난 모달이 왜 안될까ㅠㅠ?*/
+            width: 1920px;
+            display: flex;
+            position: absolute;
+            top:1400px;
+        }
+
+        .buttons{
+            display: block;
+            padding-top : 127px;
+            padding-bottom: 323px;
+        }
+
+        .hidden{
+            width : 1920px;
+            font-family: "GmarketSansMedium";
+            font-weight: 400;
+            font-size: 72px;
+            line-height: 72px;
+            color: white;
+            text-align: center;
+            justify-content: center;
+            position: absolute;
+
+        }
+
+        .light{
+            font-size: 24px;
+            line-height: 24px;
+        }
+
+        .gogo {
+            background-color: #FCEE21;
+            width:356px;
+            height: 66px;
+        }
+
+        .share {
+            background-color: #FFFFFF;
+            width:191px;
+            height: 66px;
+        }
+
+        .modal{
+            width: 800px;
+            height: 800px;
+            border-radius: 30px;
+            border: 0;
+            position: fixed;
+        }
+
+        .modal_hidden{
+            top:0;
+            left:0;
+            background-color: rgb(0,0,0,0.3);
+            z-index: 1000;
+        }
+
+        .modal_show{
+            opacity: 1;
+            z-index: 1000;
+            transition: all .5s;
+        }
+
+        .modal_title, .modal_text{
+            font-family: 'OTEnjoystoriesBA';
+            text-align: center;
+            color: #5B2386;
+            font-weight: 700;
+            letter-spacing: 0em;
+        }
+        .modal_title{
+            font-size: 96px;
+            line-height: 106px;
+        }
+
+        .modal_text{
+            font-size: 36px;
+            line-height: 40px;
+
+        }
+
+        .lion{
+
         }
 
         .footer{
@@ -163,7 +265,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-top:1813px;
+            top:2000px;
         }
 
         .notosanskr  {
@@ -177,11 +279,9 @@
             text-align: center;
             padding-top: 65px;
         }
+
     </style>
 
-    <script type="text/javascript">
-
-    </script>
 </head>
 
 <body style="background-color: #5b2383;">
@@ -208,9 +308,9 @@
 
     <main class = "main_text">
         나는
-        <input type="text" value="예)프로그래밍" class="main_subject" > 전문가가 될 것이다.
+        <input type="text" value="예)프로그래밍" class="main_subject"> 전문가가 될 것이다.
         <br>
-        그래서 앞으로 매일 하루에 <input type="text" value="예)5시간" step="1" class="main_time"> 시간씩 훈련할 것이다.
+        그래서 앞으로 매일 하루에 <input type="number" value = "5" step="1" class="main_time"> 시간씩 훈련할 것이다.
     </main>
 
     <nav class="button_time">
@@ -219,6 +319,17 @@
     </nav>
 
     <section class="hidden">
+        <p class="hidden_text">
+
+        </p>
+
+        <article class="modal">
+            <div class="modal_hidden">
+                <h3 class="modal_title">화이팅!!♥♥♥</h3>
+                <p class="modal_text">당신의 꿈을 응원합니다!</p>
+                <img src="media/lion.png" width="433px" height="337px" class="lion">
+            </div>
+        </article>
 
     </section>
 
@@ -227,6 +338,22 @@
         <p class="notosanskr"> ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다. <br>
             수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
     </footer>
+
+    <script>
+        const first_button = document.getElementsByClassName("button_how_time")[0];
+        const hidden_text = document.getElementsByClassName("hidden_text")[0];
+        const subject = document.getElementsByClassName("main_subject")[0];
+        const text_time = document.getElementsByClassName("main_time")[0];
+
+        function show(){
+            document.getElementsByClassName("modal")[0].className = "modal_show"
+        }
+        first_button.addEventListener('click', function () {
+            hidden_text.innerHTML =
+                "<span class = 'light'>당신은 </span>" + subject.value + "<span class = 'light'>전문가가 되기 위해서<br>대략 </span>" + parseInt(10000/text_time.value) + "<span class = 'light'>일 이상 훈련하셔야 합니다! :)</span><br>" + "<label class='buttons'><button class='gogo'>훈련하러 가기 GO!GO!</button><button class='share'>공유하기</button></label>";
+        });
+
+    </script>
 </div>
 </body>
 </html>
